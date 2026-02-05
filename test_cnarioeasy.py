@@ -1,17 +1,39 @@
 import re
 from playwright.sync_api import Page, expect
 
-def test_has_title(page: Page):
-    page.goto("https://playwright.dev/")
+def test_empty_fields(page: Page):
+    page.goto("https://www.cnarios.com/challenges/login-flow#challenge")
+    #setup: go to page
 
-    # Expect a title "to contain" a substring.
-    expect(page).to_have_title(re.compile("Playwright"))
+    #test: input empty credentials
+    #assert: "Both username and password are required"
 
-def test_get_started_link(page: Page):
-    page.goto("https://playwright.dev/")
+def test_invalid_credentials(page: Page):
+    #setup: go to page
 
-    # Click the get started link.
-    page.get_by_role("link", name="Get started").click()
+    #test: input invalid credentials
+    #assert: "fail message"
+    print("test")
 
-    # Expects page to have a heading with the name of Installation.
-    expect(page.get_by_role("heading", name="Installation")).to_be_visible()
+def test_login_as_user(page: Page):
+    #setup: go to page
+
+    #test: input valid credentials as user
+    #assert: "You are logged in as USER"
+    print("test")
+
+def test_login_as_admin(page: Page):
+    #setup: go to page
+
+    #test: input valid credentials as admin
+    #assert: "You are logged in as ADMIN"
+    print("test")
+
+def test_logout(page: Page):
+    #setup, 
+    # go to page
+    # login as user/admin
+
+    #click logout button
+    #assert: "login form is visible again"
+    print("test")
