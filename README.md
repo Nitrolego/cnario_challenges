@@ -16,7 +16,8 @@ It serves as a **portfolio project** showcasing real-world QA automation skills.
 ---
 
 ## Install Dependencies
-```pip install -r requirements.txt
+```
+pip install -r requirements.txt
 playwright install
 ```
 
