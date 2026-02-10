@@ -21,12 +21,19 @@ pip install -r requirements.txt
 playwright install
 ```
 
+Key for tests:
+LF = Login Flow
+PLP = Product listing & pagination
+PF = Profile filtering
+SDL = Shadow DOM login
+SSE = Simple Search Engine
+
 ---
 
 ## Running the Tests
 Run all tests:
 ```
-pytes
+pytest
 ```
 
 Run in headed mode:
