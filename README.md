@@ -1,8 +1,6 @@
 # 🧪 Cnario Test Automation Framework (Playwright + Python)
 
-This repository contains an automated end-to-end testing framework for **cnario.com**, built using **Python** and **Playwright**.
-
-It serves as a **portfolio project** showcasing real-world QA automation skills.
+This repository contains an automated end-to-end testing framework for **cnario.com** challenges, built using **Python** and **Playwright**.
 
 ---
 
